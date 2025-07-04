@@ -1,0 +1,5 @@
+pandas
+matpltlib
+seaborn
+sentence-transformers
+langchain_text_splitters
