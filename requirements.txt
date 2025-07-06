@@ -3,3 +3,11 @@ matpltlib
 seaborn
 sentence-transformers
 langchain_text_splitters
+<<<<<<< HEAD
+chromedb
+streamlit
+dotenv
+langchain_huggingface
+langchain_chroma
+=======
+>>>>>>> 95b01f10f6b0b68c39f0d6b7cea39b8a0510b448

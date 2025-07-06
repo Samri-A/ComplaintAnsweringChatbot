@@ -1,2 +1,12 @@
 env/
+<<<<<<< HEAD
+venv/
 *.csv
+.env
+__pycache__/
+data/vector_store/
+*.sqlite3
+*.bin
+=======
+*.csv
+>>>>>>> 95b01f10f6b0b68c39f0d6b7cea39b8a0510b448
