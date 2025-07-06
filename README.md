@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Complaint Answering Chatbot
 
 This project is a Complaint Answering Chatbot designed to process, analyze, and answer consumer complaints using advanced text processing and vector-based retrieval techniques.
@@ -107,6 +106,3 @@ Run tests using your preferred test runner (e.g., pytest) in the [tests/](tests/
 2. Create a new branch.
 3. Make your changes and add tests.
 4. Submit a pull request.
-=======
-# ComplaintAnsweringChatbot
->>>>>>> 95b01f10f6b0b68c39f0d6b7cea39b8a0510b448
