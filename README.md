@@ -1,6 +1,8 @@
 # Complaint Answering Chatbot
 
-This project is a Complaint Answering Chatbot designed to process, analyze, and answer consumer complaints using advanced text processing and vector-based retrieval techniques.
+This project is a Complaint Answering Chatbot that processes, analyzes, and answers consumer complaints using advanced text processing, data augmentation, and vector-based retrieval techniques. The system leverages Python scripts for data handling and a Streamlit app for interactive user engagement.
+
+---
 
 ## Project Structure
 
@@ -34,14 +36,17 @@ src/
   preprocess_document.py
   __pycache__/
 tests/
+  unitest.py
 ```
+
+---
 
 ## Main Components
 
 - **src/**: Source code for the main application and data processing scripts.
-  - [`src/app.py`](src/app.py): Main application entry point.
+  - [`src/app.py`](src/app.py): Main Streamlit app entry point.
   - [`src/Augment_Generation.py`](src/Augment_Generation.py): Data augmentation and generation utilities.
-  - [`src/embed_in_vectorstore.py`](src/embed_in_vectorstore.py): Embeds processed documents into a vector store.
+  - [`src/embed_in_vectorstore.py`](src/embed_in_vectorstore.py): Embeds processed documents into a vector store (ChromaDB).
   - [`src/preprocess_document.py`](src/preprocess_document.py): Preprocessing scripts for complaint documents.
 
 - **data/**: Data storage directory.
@@ -53,11 +58,13 @@ tests/
   - [`notebook/10EDA.ipynb`](notebook/10EDA.ipynb): Exploratory Data Analysis.
   - [`notebook/text_processing.ipynb`](notebook/text_processing.ipynb): Text preprocessing and feature engineering.
 
-- **tests/**: Directory for unit and integration tests.
+- **tests/**: Unit and integration tests ([`tests/unitest.py`](tests/unitest.py)).
 
 - **.github/**: GitHub Actions workflows for CI/CD.
 
 - **requirements.txt**: Python dependencies.
+
+---
 
 ## Setup
 
@@ -82,23 +89,42 @@ tests/
    - Place raw complaint data in `data/raw/complaints.csv`.
    - Run preprocessing scripts as needed.
 
+---
+
 ## Usage
 
 - **Data Preprocessing:**  
   Use [`src/preprocess_document.py`](src/preprocess_document.py) to clean and preprocess complaint data.
 
+- **Data Augmentation:**  
+  Use [`src/Augment_Generation.py`](src/Augment_Generation.py) for augmenting and generating additional data.
+
 - **Embedding and Vector Store:**  
   Use [`src/embed_in_vectorstore.py`](src/embed_in_vectorstore.py) to embed documents and store them in ChromaDB.
 
-- **Application:**  
-  Run [`src/app.py`](src/app.py) to start the chatbot or API service.
+- **Streamlit Application:**  
+  Run the main app with:
+  ```sh
+  streamlit run src/app.py
+  ```
+  This will launch the interactive chatbot interface.
 
 - **Notebooks:**  
-  Explore and analyze data using the notebooks in the [notebook/](notebook/) directory.
+  Explore and analyze data using the notebooks in the [`notebook/`](notebook/) directory.
+
+---
+
+## Screenshot
+
+_Add a screenshot of the Streamlit app here._
+
+---
 
 ## Testing
 
-Run tests using your preferred test runner (e.g., pytest) in the [tests/](tests/) directory.
+Run tests using your preferred test runner (e.g., pytest) in the [`tests/`](tests/) directory.
+
+---
 
 ## Contributing
 
@@ -106,3 +132,5 @@ Run tests using your preferred test runner (e.g., pytest) in the [tests/](tests/
 2. Create a new branch.
 3. Make your changes and add tests.
 4. Submit a pull request.
+
+---
