@@ -116,13 +116,14 @@ tests/
 
 ## Screenshot
 
-_Add a screenshot of the Streamlit app here._
+_ a screenshot of the Streamlit app _
+![image](https://github.com/user-attachments/assets/e711e884-3bb6-48c6-bf67-eec22b208bb9)
 
 ---
 
 ## Testing
 
-Run tests using your preferred test runner (e.g., pytest) in the [`tests/`](tests/) directory.
+Run tests using unitestin the [`tests/`](tests/) directory.
 
 ---
 
