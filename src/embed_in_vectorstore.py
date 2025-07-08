@@ -6,10 +6,9 @@ def embed_in_vectorstore(df, embeddings):
     client = chromadb.PersistentClient(path="../data/vector_store")
 
     try:
-        collection = client.create_collection(name="complaint_narrative" , metadata={"narrative" :"A collection of complaint narratives"})
+        collection = client.get_collection(name="complaint_narrative")
     except:
-        client.delete_collection(name="complaint_narrative")
-        collection = client.create_collection(name="complaint_narrative")
+        collection = client.create_collection(name="complaint_narrative" ,  metadata={"narrative" :"A collection of complaint narratives"})
     
     print("Collection created.")
     ids = [f"narrative_{i}" for i in range(len(df))]
